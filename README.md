@@ -1,5 +1,41 @@
-##Observações
- - Projeto criado utilizando Figma.
+# 🎓 Projeto Angular: Gerador de certificado
+
+🧑‍💻 Este projeto, faz parte do curso introdutório de Angular da Rocketseat, com 10h de duração.
+
+## ⚙️ Tecnologias Utilizadas
+- Angular CLI v20
+- Node v22
+- HTML
+- CSS
+- TypeScript
+- Figma
+- Netlify
+
+
+## 🖌️ Figma do projeto:
+[Acesse o Figma do projeto](https://www.figma.com/pt-br/comunidade/file/1508905005736436009/gestao-de-certificados)
+
+
+## 💻 Link da aplicação no Netlify 
+[Acesse o projeto em produção](https://geradorcertificadomalchika.netlify.app)
+
+
+## 🗂️ Estrutura do projeto
+<img width="477" height="502" alt="image" src="https://github.com/user-attachments/assets/829b2d2f-0714-4acb-9776-1a8f7546648b" />
+
+- **dist**: pasta criada ao ser feito deploy com NetliFy.
+    - Para fazer o deploy, primeiro cria-se o arquivo netlify.toml
+    - Depois, abra um terminal na raiz do projeto, e cole o que foi colocado no command, dentro do netlify.toml
+    - Com isso, será criada a pasta 'dist' no projeto, a qual será utilizada pro deploy, pois contem todo o projeto dentro do package browser.
+- **public**: contém as imagens que serão usadas
+- **src**: contém todos os componentes criados que são usados na aplicação. Está seguindo um padrão adaptado, modular e funcional para a simplicidade do projeto.
+
+## Adicionais
+Tomei a liberdade de incluir uma funcionalidade não abordada no curso, o botão "Limpar lista".
+
+<img width="986" height="415" alt="image" src="https://github.com/user-attachments/assets/da50c99d-d2c4-4553-a3d2-0cb0c324ea48" />
+
+
 
 
 # GeradorCertificado
