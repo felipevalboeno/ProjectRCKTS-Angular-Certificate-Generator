@@ -9,16 +9,7 @@ import { RouterLink, RouterModule } from '@angular/router';
   templateUrl: './navbar.html',
   styleUrl: './navbar.css'
 })
-export class Navbar implements OnInit{
-    ngOnInit(): void {
-      this.mensagem();
+export class Navbar{
 
-    }
-
-
-    mensagem(){
-      console.log("Meu componente navbar inicializou");
-
-    }
 
 }
