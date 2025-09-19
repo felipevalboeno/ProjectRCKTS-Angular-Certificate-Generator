@@ -20,4 +20,10 @@ export class Certificados implements OnInit {
   ngOnInit(): void {
     this.certificados = this.certificadoService.certificados;
   }
+
+  onLimparLista() {
+  this.certificadoService.limparCertificados();
+  this.certificados = [];
+}
+
 }
