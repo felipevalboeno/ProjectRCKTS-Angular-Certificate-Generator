@@ -155,10 +155,10 @@
     width: 40px;
   }
 
-  .certificado .img-assinatura {
-    width: 60px;
-    left: 10px;
-    bottom: 10px;
+.certificado .img-assinatura {
+    width: 20%;
+    right: 5%;
+    bottom: 5%;
   }
 
   .conteudo-certificado h1 {
