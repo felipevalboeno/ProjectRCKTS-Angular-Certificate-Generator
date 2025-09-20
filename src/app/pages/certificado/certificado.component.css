@@ -156,7 +156,8 @@
   }
 
   .certificado .img-assinatura {
-    width: 80px;
+   max-width: 25%; /* não ultrapassa 25% do certificado */
+    height: auto;
   }
 
   .conteudo-certificado h1 {
