@@ -140,32 +140,78 @@
 
 /* Mobile */
 @media (max-width: 768px) {
-  .certificado {
+  .menu-certificado {
     max-width: 100%;
-    min-height: 300px; /* reduz a altura */
+    padding: 0 10px;
+  }
+
+  .certificado {
+    width: 100%;        /* ocupa toda a largura disponível */
+    height: auto;       /* ajusta altura proporcional */
     padding: 10px;
+    margin-top: 16px;
+    border-radius: 8px;
+  }
+
+  .conteudo-certificado {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 10px;
+    border-radius: 6px;
   }
 
   .certificado img {
-    max-width: 80%;  /* reduz imagens dentro */
-    height: auto;    /* mantém proporção */
+    max-width: 100%;
+    height: auto;
   }
 
-  .certificado .icone-medalha {
+  .icone-medalha {
     width: 40px;
+    height: auto;
+    top: 5px;
+    left: 5px;
   }
 
-.certificado .img-assinatura {
-    width: 40px
-
+  .img-assinatura {
+    width: 10%;        /* relativo à largura do certificado */
+    max-width: 60px;   /* não cresce demais */
+    height: auto;
+    right: 5%;         /* distância da borda direita proporcional */
+    top: 210px;        /* distância do bottom proporcional */
   }
 
-  .conteudo-certificado h1 {
+  .info-certificado {
+    margin: 20px 10px;
+    gap: 12px;
+  }
+
+  .titulo-subtitulo-certificado h1 {
     font-size: 16px;
+    letter-spacing: 1px;
   }
 
-  .conteudo-certificado p,
-  .nome-aluno {
+  .titulo-subtitulo-certificado p,
+  .lista-atividade-titulo,
+  .lista-atividade,
+  .nome-aluno,
+  .data-emissao {
     font-size: 12px;
+    text-align: center;
+  }
+
+  .nome-aluno {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .lista-atividade {
+    width: 100%; /* garante que a lista não vaze */
+    font-size: 12px;
+  }
+
+  .data-emissao {
+    font-size: 8px;
+    padding-bottom: 20px;
   }
 }
