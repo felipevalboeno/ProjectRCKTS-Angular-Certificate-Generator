@@ -136,3 +136,35 @@
   bottom: 24px;
 
 }
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  .certificado {
+    max-width: 100%;
+    min-height: 300px; /* reduz a altura */
+    padding: 10px;
+  }
+
+  .certificado img {
+    max-width: 80%;  /* reduz imagens dentro */
+    height: auto;    /* mantém proporção */
+  }
+
+  .certificado .icone-medalha {
+    width: 40px;
+  }
+
+  .certificado .img-assinatura {
+    width: 80px;
+  }
+
+  .conteudo-certificado h1 {
+    font-size: 16px;
+  }
+
+  .conteudo-certificado p,
+  .nome-aluno {
+    font-size: 12px;
+  }
+}

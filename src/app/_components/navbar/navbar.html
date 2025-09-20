@@ -1,18 +1,27 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
+      <!--Logo-->
       <a  routerLink="/" class="navbar-logo">
         <img src="navbar/logo.svg" alt="logo">
-
       </a>
-      <div class="collapse navbar-collapse justify-content-end">
+
+<!--Hamburger button-->
+    <button class="navbar-toggler" type="button" (click)="toggleMenu()">
+      <i class="ph ph-list"></i>
+    </button>
+
+
+
+<!--Menu collapse-->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarConteudo" [class.show]="menuAberto">
         <ul class="navbar-nav">
           <li class="nav-item d-flex align-items-center">
             <i class="ph ph-medal" ngClass="{'active': rlaListaCertificado.isActive}"></i>
             <a routerLink="/" #rlaListaCertificado="routerLinkActive" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
              class="nav-link ">Lista de certificados</a>
-
           </li>
-          <!-- MS: distanciar a li com -  margem start 3 -->
+
+          <!-- MS: distanciated an li with -  margem start 3 -->
           <li class="nav-item d-flex align-items-center ms-3">
             <i class="ph ph-circles-three-plus" ngClass="{'active': rlaGerarCertificado.isActive}"></i>
             <a routerLink="/certificados/novo" #rlaGerarCertificado="routerLinkActive" routerLinkActive="active"
